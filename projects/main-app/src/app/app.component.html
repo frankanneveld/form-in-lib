@@ -1,0 +1,14 @@
+<h1>Form Test</h1>
+<hr>
+<div [formGroup]="form" class="form">
+    <lib-custom-input formControlName="myInput1"></lib-custom-input>
+    <lib-custom-input #fc2 formControlName="myInput2"></lib-custom-input>
+    <lib-custom-input formControlName="myInput3"></lib-custom-input>
+</div>
+
+<button (click)="patchValue()">Patch myInput 2</button>
+
+<hr>
+<pre>
+    {{form.value | json}}
+</pre>
