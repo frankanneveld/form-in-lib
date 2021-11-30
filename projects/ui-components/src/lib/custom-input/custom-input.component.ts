@@ -25,8 +25,6 @@ export class CustomInputComponent implements OnInit {
   }
 
   public writeValue(val: any): void {
-    // Deze is niet nodig als er al een value gezet wordt vanuit een ander component.
-    // Maar moet wel geimplementeerd worden vanwege de ControlValueAccessor interface.
     this.onValue(val);
   }
 
