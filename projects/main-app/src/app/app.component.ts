@@ -16,12 +16,7 @@ export class AppComponent {
     myInput3:  new FormControl('myInput3')
   })
 
-  
-
-  public patchValue(): void {
-    // const control = this.fc2?.nativeElement?.ngControl as FormControl
-    this.form.get('myInput2')?.patchValue('value patched here');
-    // console.log(control);
-    // this.fc2?.nativeElement?.value = 'test'; //.patchValue('test');
+  public patchValue(value: string): void {
+    this.form.get('myInput2')?.patchValue(value);
   }
 }

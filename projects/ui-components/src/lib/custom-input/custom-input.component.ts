@@ -24,7 +24,7 @@ export class CustomInputComponent implements OnInit {
   }
 
   public writeValue(val: any): void {
-    this.input.patchValue(val);
+    // Deze is niet nodig als er al een value gezet wordt vanuit een ander component.
   }
 
   public registerOnChange(fn: any): void {

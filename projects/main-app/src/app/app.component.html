@@ -6,7 +6,10 @@
     <lib-custom-input formControlName="myInput3"></lib-custom-input>
 </div>
 
-<button (click)="patchValue()">Patch myInput 2</button>
+<br>
+<button (click)="form.get('myInput1')?.patchValue('Patch myInput 1')">Patch myInput 1</button>
+<button (click)="form.get('myInput2')?.patchValue('Patch myInput 2')">Patch myInput 2</button>
+<button (click)="form.get('myInput3')?.patchValue('Patch myInput 3')">Patch myInput 3</button>
 
 <hr>
 <pre>
