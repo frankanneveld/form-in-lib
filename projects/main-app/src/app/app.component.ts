@@ -15,8 +15,4 @@ export class AppComponent {
     myInput2:  new FormControl('myInput2'),
     myInput3:  new FormControl('myInput3')
   })
-
-  public patchValue(value: string): void {
-    this.form.get('myInput2')?.patchValue(value);
-  }
 }
