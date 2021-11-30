@@ -1,5 +1,5 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
-import { FormGroup, FormControl, NgControl } from '@angular/forms';
+import { Component } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +7,6 @@ import { FormGroup, FormControl, NgControl } from '@angular/forms';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-
-  @ViewChild('fc2', { static: true }) fc2: ElementRef | undefined;
-
   public form = new FormGroup({
     myInput1:  new FormControl('myInput1'),
     myInput2:  new FormControl('myInput2'),
